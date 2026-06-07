@@ -53,7 +53,7 @@ export default function PatternForest({ question, onAnswer }) {
         })}
       </div>
 
-      <p className="counting-tip">Look at the numbers! What pattern do you see? 🤔</p>
+      <p className="counting-tip">{data.tip || "Look at the pattern! What comes next? 🤔"}</p>
 
       {/* Options */}
       <div className="options-container">

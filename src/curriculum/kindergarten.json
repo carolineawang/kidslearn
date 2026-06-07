@@ -172,6 +172,175 @@
           "mascotHint": "A delicious donut is round, just like a circle!"
         }
       ]
+    },
+    {
+      "id": "k_ocean_counting",
+      "title": "Ocean Counting",
+      "description": "Dive deep under the water and count the ocean animals!",
+      "emoji": "🐳",
+      "unlockedBy": "k_shape_island",
+      "questions": [
+        {
+          "id": "k_ocean_1",
+          "type": "visual-counting",
+          "prompt": "How many friendly octopuses can you count?",
+          "data": {
+            "icon": "🐙",
+            "count": 4
+          },
+          "options": [3, 4, 5, 6],
+          "answer": 4,
+          "mascotHint": "Count the purple octopuses floating in the water!"
+        },
+        {
+          "id": "k_ocean_2",
+          "type": "visual-counting",
+          "prompt": "How many playful dolphins are jumping?",
+          "data": {
+            "icon": "🐬",
+            "count": 7
+          },
+          "options": [6, 7, 8, 9],
+          "answer": 7,
+          "mascotHint": "Look at the happy dolphins! Let's count them one by one."
+        },
+        {
+          "id": "k_ocean_3",
+          "type": "visual-counting",
+          "prompt": "How many colorful fish are swimming by?",
+          "data": {
+            "icon": "🐠",
+            "count": 9
+          },
+          "options": [7, 8, 9, 10],
+          "answer": 9,
+          "mascotHint": "So many bright yellow and orange fish! Count them all."
+        },
+        {
+          "id": "k_ocean_4",
+          "type": "visual-counting",
+          "prompt": "How many little baby sharks can you see?",
+          "data": {
+            "icon": "🦈",
+            "count": 10
+          },
+          "options": [8, 9, 10, 11],
+          "answer": 10,
+          "mascotHint": "Sharks can be friendly too! Let's count them carefully up to 10."
+        }
+      ]
+    },
+    {
+      "id": "k_pattern_garden",
+      "title": "Pattern Garden",
+      "description": "Grow a beautiful garden by figuring out the patterns!",
+      "emoji": "🌸",
+      "unlockedBy": "k_ocean_counting",
+      "questions": [
+        {
+          "id": "k_pat_gard_1",
+          "type": "pattern-completion",
+          "prompt": "What flower comes next in the garden?",
+          "data": {
+            "sequence": ["🌸", "🌻", "🌸", "🌻", null],
+            "step": 1,
+            "tip": "Look at the pattern of flowers! What comes next? 🌸 🌻 🌸 🌻..."
+          },
+          "options": ["🌸", "🌻"],
+          "answer": "🌸",
+          "mascotHint": "It goes pink flower, sunflower, pink flower, sunflower... what comes next?"
+        },
+        {
+          "id": "k_pat_gard_2",
+          "type": "pattern-completion",
+          "prompt": "What fruit is missing from the line?",
+          "data": {
+            "sequence": ["🍎", "🍌", "🍎", "🍌", null],
+            "step": 1,
+            "tip": "Apple, banana, apple, banana! What is next? 🍎 🍌 🍎 🍌..."
+          },
+          "options": ["🍎", "🍌"],
+          "answer": "🍎",
+          "mascotHint": "The pattern starts over with the red fruit!"
+        },
+        {
+          "id": "k_pat_gard_3",
+          "type": "pattern-completion",
+          "prompt": "Find the missing insect helper!",
+          "data": {
+            "sequence": ["🦋", "🦋", "🐝", "🦋", "🦋", null],
+            "step": 1,
+            "tip": "Count them: butterfly, butterfly, bee! butterfly, butterfly..."
+          },
+          "options": ["🦋", "🐝"],
+          "answer": "🐝",
+          "mascotHint": "Two butterflies are always followed by one busy bee."
+        },
+        {
+          "id": "k_pat_gard_4",
+          "type": "pattern-completion",
+          "prompt": "Which color circle completes the path?",
+          "data": {
+            "sequence": ["🔴", "🟡", "🟢", "🔴", "🟡", null],
+            "step": 1,
+            "tip": "Red, yellow, green! Red, yellow..."
+          },
+          "options": ["🔴", "🟡", "🟢"],
+          "answer": "🟢",
+          "mascotHint": "First red, then yellow, and last is..."
+        }
+      ]
+    },
+    {
+      "id": "k_bakery_sums",
+      "title": "Bakery Sums",
+      "description": "Add the tasty treats together in the Animal Bakery!",
+      "emoji": "🧁",
+      "unlockedBy": "k_pattern_garden",
+      "questions": [
+        {
+          "id": "k_bake_1",
+          "type": "equation",
+          "prompt": "How many sweet donuts do we have in total?",
+          "data": {
+            "num1": 1,
+            "num2": 1,
+            "operator": "+",
+            "icon": "🍩"
+          },
+          "options": [1, 2, 3, 4],
+          "answer": 2,
+          "mascotHint": "One yummy donut on the left and one on the right. Put them together!"
+        },
+        {
+          "id": "k_bake_2",
+          "type": "equation",
+          "prompt": "How many delicious cupcakes can you count?",
+          "data": {
+            "num1": 2,
+            "num2": 1,
+            "operator": "+",
+            "icon": "🧁"
+          },
+          "options": [2, 3, 4, 5],
+          "answer": 3,
+          "mascotHint": "Count the cupcakes! 2 sweet cupcakes plus 1 more cupcake make..."
+        },
+        {
+          "id": "k_bake_3",
+          "type": "equation",
+          "prompt": "What is the total number of chocolate chip cookies?",
+          "data": {
+            "num1": 3,
+            "num2": 2,
+            "operator": "+",
+            "icon": "🍪"
+          },
+          "options": [3, 4, 5, 6],
+          "answer": 5,
+          "mascotHint": "Let's count them: 3 cookies on the left plus 2 on the right is..."
+        }
+      ]
     }
   ]
 }
