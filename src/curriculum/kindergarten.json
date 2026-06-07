@@ -1,0 +1,177 @@
+{
+  "grade": "kindergarten",
+  "title": "Kindergarten Math Quest",
+  "description": "Fun math games for ages 4-5! Count cute animals, match shapes, and compare sizes.",
+  "quests": [
+    {
+      "id": "k_counting_zoo",
+      "title": "Counting Zoo",
+      "description": "Help count all the animals in the safari zoo!",
+      "emoji": "🦁",
+      "unlockedBy": null,
+      "questions": [
+        {
+          "id": "k_count_1",
+          "type": "visual-counting",
+          "prompt": "How many happy lions can you count?",
+          "data": {
+            "icon": "🦁",
+            "count": 3
+          },
+          "options": [2, 3, 4, 5],
+          "answer": 3,
+          "mascotHint": "Tap each lion to count them! 1... 2... 3!"
+        },
+        {
+          "id": "k_count_2",
+          "type": "visual-counting",
+          "prompt": "How many friendly frogs are sitting in the pond?",
+          "data": {
+            "icon": "🐸",
+            "count": 5
+          },
+          "options": [3, 4, 5, 6],
+          "answer": 5,
+          "mascotHint": "Green frogs love to jump! Let's count them together."
+        },
+        {
+          "id": "k_count_3",
+          "type": "visual-counting",
+          "prompt": "How many sweet strawberries are ready to eat?",
+          "data": {
+            "icon": "🍓",
+            "count": 8
+          },
+          "options": [6, 7, 8, 9],
+          "answer": 8,
+          "mascotHint": "Yum, strawberries! Count all of them on the screen."
+        },
+        {
+          "id": "k_count_4",
+          "type": "visual-counting",
+          "prompt": "How many shiny stars are in the night sky?",
+          "data": {
+            "icon": "⭐",
+            "count": 6
+          },
+          "options": [4, 5, 6, 7],
+          "answer": 6,
+          "mascotHint": "Make a wish! Count all the yellow stars."
+        }
+      ]
+    },
+    {
+      "id": "k_size_safari",
+      "title": "Size Safari",
+      "description": "Spot the biggest and smallest animals in the wild!",
+      "emoji": "🐘",
+      "unlockedBy": "k_counting_zoo",
+      "questions": [
+        {
+          "id": "k_size_1",
+          "type": "comparison",
+          "prompt": "Which animal is the BIGGEST?",
+          "data": {
+            "criterion": "biggest",
+            "items": [
+              { "id": "mouse", "icon": "🐭", "size": 60, "name": "Little Mouse" },
+              { "id": "rabbit", "icon": "🐰", "size": 90, "name": "Fluffy Bunny" },
+              { "id": "elephant", "icon": "🐘", "size": 150, "name": "Big Elephant" }
+            ]
+          },
+          "options": ["🐭", "🐰", "🐘"],
+          "answer": "🐘",
+          "mascotHint": "Look at the giant elephant! It towers over the mouse."
+        },
+        {
+          "id": "k_size_2",
+          "type": "comparison",
+          "prompt": "Which fruit is the SMALLEST?",
+          "data": {
+            "criterion": "smallest",
+            "items": [
+              { "id": "cherry", "icon": "🍒", "size": 50, "name": "Cherry" },
+              { "id": "apple", "icon": "🍎", "size": 100, "name": "Apple" },
+              { "id": "watermelon", "icon": "🍉", "size": 160, "name": "Watermelon" }
+            ]
+          },
+          "options": ["🍒", "🍎", "🍉"],
+          "answer": "🍒",
+          "mascotHint": "The tiny red cherry is much smaller than the watermelon!"
+        },
+        {
+          "id": "k_size_3",
+          "type": "comparison",
+          "prompt": "Who has MORE cookies?",
+          "data": {
+            "criterion": "more",
+            "items": [
+              { "id": "left", "icon": "🍪🍪", "size": 80, "name": "2 Cookies" },
+              { "id": "right", "icon": "🍪🍪🍪🍪🍪", "size": 110, "name": "5 Cookies" }
+            ]
+          },
+          "options": ["🍪🍪", "🍪🍪🍪🍪🍪"],
+          "answer": "🍪🍪🍪🍪🍪",
+          "mascotHint": "Mmm, cookies! Five is a bigger number than two."
+        }
+      ]
+    },
+    {
+      "id": "k_shape_island",
+      "title": "Shape Island",
+      "description": "Find hidden shapes and match them up!",
+      "emoji": "📐",
+      "unlockedBy": "k_size_safari",
+      "questions": [
+        {
+          "id": "k_shape_1",
+          "type": "comparison",
+          "prompt": "Find the shape that is a CIRCLE (round like a wheel)!",
+          "data": {
+            "criterion": "circle",
+            "items": [
+              { "id": "square", "icon": "🟩", "size": 90, "name": "Square" },
+              { "id": "circle", "icon": "🔴", "size": 90, "name": "Circle" },
+              { "id": "triangle", "icon": "🔺", "size": 90, "name": "Triangle" }
+            ]
+          },
+          "options": ["🟩", "🔴", "🔺"],
+          "answer": "🔴",
+          "mascotHint": "Circles have no corners and roll all around!"
+        },
+        {
+          "id": "k_shape_2",
+          "type": "comparison",
+          "prompt": "Find the shape with exactly THREE corners (a TRIANGLE)!",
+          "data": {
+            "criterion": "triangle",
+            "items": [
+              { "id": "triangle", "icon": "🔺", "size": 90, "name": "Triangle" },
+              { "id": "circle", "icon": "🔵", "size": 90, "name": "Circle" },
+              { "id": "square", "icon": "🟧", "size": 90, "name": "Square" }
+            ]
+          },
+          "options": ["🔺", "🔵", "🟧"],
+          "answer": "🔺",
+          "mascotHint": "Triangles look like pizza slices! Count the 3 corners."
+        },
+        {
+          "id": "k_shape_3",
+          "type": "comparison",
+          "prompt": "Which item looks like a clock or wheel (Circle)?",
+          "data": {
+            "criterion": "circle_object",
+            "items": [
+              { "id": "door", "icon": "🚪", "size": 100, "name": "Door" },
+              { "id": "donut", "icon": "🍩", "size": 100, "name": "Donut" },
+              { "id": "gift", "icon": "🎁", "size": 100, "name": "Gift Box" }
+            ]
+          },
+          "options": ["🚪", "🍩", "🎁"],
+          "answer": "🍩",
+          "mascotHint": "A delicious donut is round, just like a circle!"
+        }
+      ]
+    }
+  ]
+}
