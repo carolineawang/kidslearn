@@ -149,6 +149,193 @@
           "mascotHint": "Count with your ten fingers! 10, 20, 30..."
         }
       ]
+    },
+    {
+      "id": "g1_comparison",
+      "title": "Greater or Less",
+      "description": "Compare numbers and symbols with the hungry alligator!",
+      "emoji": "🐊",
+      "unlockedBy": "g1_patterns",
+      "questions": [
+        {
+          "id": "g1_comp_1",
+          "type": "comparison",
+          "prompt": "Which number is the GREATEST?",
+          "data": {
+            "items": [
+              { "id": "14", "icon": "14", "size": 100, "name": "Fourteen" },
+              { "id": "25", "icon": "25", "size": 100, "name": "Twenty-Five" },
+              { "id": "19", "icon": "19", "size": 100, "name": "Nineteen" }
+            ]
+          },
+          "options": ["14", "25", "19"],
+          "answer": "25",
+          "mascotHint": "Twenty-five is a much bigger number than fourteen and nineteen!"
+        },
+        {
+          "id": "g1_comp_2",
+          "type": "comparison",
+          "prompt": "Which number is the SMALLEST?",
+          "data": {
+            "items": [
+              { "id": "32", "icon": "32", "size": 100, "name": "Thirty-Two" },
+              { "id": "17", "icon": "17", "size": 100, "name": "Seventeen" },
+              { "id": "29", "icon": "29", "size": 100, "name": "Twenty-Nine" }
+            ]
+          },
+          "options": ["32", "17", "29"],
+          "answer": "17",
+          "mascotHint": "Seventeen is the smallest number here. Look at the tens place!"
+        },
+        {
+          "id": "g1_comp_3",
+          "type": "comparison",
+          "prompt": "Which alligator mouth makes this math sentence true?  15 [?] 9",
+          "data": {
+            "items": [
+              { "id": "＞", "icon": "＞", "size": 110, "name": "Greater Than" },
+              { "id": "＜", "icon": "＜", "size": 110, "name": "Less Than" },
+              { "id": "＝", "icon": "＝", "size": 110, "name": "Equal To" }
+            ]
+          },
+          "options": ["＞", "＜", "＝"],
+          "answer": "＞",
+          "mascotHint": "15 is bigger than 9, so the alligator mouth points open toward 15 (＞)!"
+        },
+        {
+          "id": "g1_comp_4",
+          "type": "comparison",
+          "prompt": "Which alligator mouth makes this math sentence true?  18 [?] 24",
+          "data": {
+            "items": [
+              { "id": "＞", "icon": "＞", "size": 110, "name": "Greater Than" },
+              { "id": "＜", "icon": "＜", "size": 110, "name": "Less Than" },
+              { "id": "＝", "icon": "＝", "size": 110, "name": "Equal To" }
+            ]
+          },
+          "options": ["＞", "＜", "＝"],
+          "answer": "＜",
+          "mascotHint": "24 is the bigger number here, so the mouth points open toward 24 (＜)!"
+        }
+      ]
+    },
+    {
+      "id": "g1_clock_tower",
+      "title": "Clock Tower",
+      "description": "Help set the clocks to the correct time!",
+      "emoji": "⏰",
+      "unlockedBy": "g1_comparison",
+      "questions": [
+        {
+          "id": "g1_clock_1",
+          "type": "comparison",
+          "prompt": "Which clock shows exactly 3 o'clock (3:00)?",
+          "data": {
+            "items": [
+              { "id": "3:00", "icon": "🕒", "size": 120, "name": "Clock A" },
+              { "id": "6:00", "icon": "🐌", "size": 120, "name": "Clock B" },
+              { "id": "9:00", "icon": "🐢", "size": 120, "name": "Clock C" }
+            ]
+          },
+          "options": ["🕒", "🐌", "🐢"],
+          "answer": "🕒",
+          "mascotHint": "For 3 o'clock, the short hour hand points right at 3 (🕒)!"
+        },
+        {
+          "id": "g1_clock_2",
+          "type": "comparison",
+          "prompt": "What time does this clock show: 🕕?",
+          "data": {
+            "items": [
+              { "id": "6:00", "icon": "6:00", "size": 100, "name": "6:00" },
+              { "id": "12:00", "icon": "12:00", "size": 100, "name": "12:00" }
+            ]
+          },
+          "options": ["6:00", "12:00"],
+          "answer": "6:00",
+          "mascotHint": "The hour hand points straight down to 6, and the minute hand is up. It is 6:00!"
+        },
+        {
+          "id": "g1_clock_3",
+          "type": "comparison",
+          "prompt": "Which clock shows half past 1 (1:30)?",
+          "data": {
+            "items": [
+              { "id": "1:30", "icon": "🕜", "size": 120, "name": "Clock A" },
+              { "id": "7:30", "icon": "🕢", "size": 120, "name": "Clock B" },
+              { "id": "12:00", "icon": "🕛", "size": 120, "name": "Clock C" }
+            ]
+          },
+          "options": ["🕜", "🕢", "🕛"],
+          "answer": "🕜",
+          "mascotHint": "Look at the hour hand! It is halfway between 1 and 2, which means it is 1:30!"
+        }
+      ]
+    },
+    {
+      "id": "g1_word_problems",
+      "title": "Word Adventures",
+      "description": "Solve the story mysteries in MathLand!",
+      "emoji": "📖",
+      "unlockedBy": "g1_clock_tower",
+      "questions": [
+        {
+          "id": "g1_word_1",
+          "type": "equation",
+          "prompt": "Leo has 5 toy cars 🚗. He gets 4 more. How many cars does he have now?",
+          "data": {
+            "num1": 5,
+            "num2": 4,
+            "operator": "+",
+            "icon": "🚗"
+          },
+          "options": [7, 8, 9, 10],
+          "answer": 9,
+          "mascotHint": "Leo has 5 cars, and then adds 4 more. Let's solve: 5 + 4!"
+        },
+        {
+          "id": "g1_word_2",
+          "type": "equation",
+          "prompt": "Mia baked 8 cupcakes 🧁. Her friends ate 3. How many cupcakes are left?",
+          "data": {
+            "num1": 8,
+            "num2": 3,
+            "operator": "-",
+            "icon": "🧁"
+          },
+          "options": [4, 5, 6, 7],
+          "answer": 5,
+          "mascotHint": "Mia had 8 cupcakes and 3 were eaten. Pop 3 cupcakes and count what's left!"
+        },
+        {
+          "id": "g1_word_3",
+          "type": "equation",
+          "prompt": "There are 6 birds sitting 🐦. 4 more join them. How many birds are there now?",
+          "data": {
+            "num1": 6,
+            "num2": 4,
+            "operator": "+",
+            "icon": "🐦"
+          },
+          "options": [8, 9, 10, 11],
+          "answer": 10,
+          "mascotHint": "6 birds plus 4 more birds! Let's count them all together: 6 + 4."
+        },
+        {
+          "id": "g1_word_4",
+          "type": "equation",
+          "prompt": "You have 9 gold stars ⭐. You give 5 away. How many stars do you keep?",
+          "data": {
+            "num1": 9,
+            "num2": 5,
+            "operator": "-",
+            "icon": "⭐"
+          },
+          "options": [3, 4, 5, 6],
+          "answer": 4,
+          "mascotHint": "Start with 9 stars, pop 5 to give away, and count how many remain!"
+        }
+      ]
     }
   ]
 }
