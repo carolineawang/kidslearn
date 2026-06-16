@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { grades, getCurriculum, getQuest, isQuestUnlocked } from './curriculum/registry';
 import { playPop, playCorrect, playIncorrect, playFanfare } from './sound/synth';
+import { generateDynamicQuestion } from './curriculum/generator';
 
 // Game Renderers
 import VisualCounting from './games/VisualCounting';
@@ -147,6 +148,24 @@ export default function App() {
     setActiveQuest(null);
     setCelebrationActive(false);
     setMascotMsg(`Welcome back to the map, ${childName}! Select your next math challenge! 🗺️`);
+  };
+
+  const handleRefreshQuestion = () => {
+    if (!activeQuest) return;
+    playPop();
+    const currentQuestion = activeQuest.questions[currentQuestionIdx];
+    const newQuestion = generateDynamicQuestion(activeQuest.id, currentQuestion);
+
+    setActiveQuest((prev) => {
+      const updatedQuestions = [...prev.questions];
+      updatedQuestions[currentQuestionIdx] = newQuestion;
+      return {
+        ...prev,
+        questions: updatedQuestions
+      };
+    });
+
+    setMascotMsg("Poof! 🪄 I changed the question for you! Give this one a try!");
   };
 
   const handleResetProfile = () => {
@@ -324,12 +343,21 @@ export default function App() {
       <div className="game-area-container">
         {/* Header navigation & progress */}
         <div className="game-progress-header">
-          <button 
-            className="back-to-map-btn"
-            onClick={handleBackToDashboard}
-          >
-            🗺️ Back to Map
-          </button>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            <button 
+              className="back-to-map-btn"
+              onClick={handleBackToDashboard}
+            >
+              🗺️ Back to Map
+            </button>
+            <button 
+              className="change-question-btn"
+              onClick={handleRefreshQuestion}
+              title="Change this question to a different one!"
+            >
+              🔄 Change Question
+            </button>
+          </div>
           
           <div className="game-progress-bar">
             <div 

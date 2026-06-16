@@ -516,6 +516,31 @@ body {
   box-shadow: 0 1px 0px rgba(0,0,0,0.05);
 }
 
+.change-question-btn {
+  background: #ffeaa7;
+  border: 3px solid #fdcb6e;
+  padding: 8px 16px;
+  border-radius: var(--border-radius-md);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 0px rgba(0,0,0,0.05);
+  transition: all 0.1s ease;
+  color: #d63031;
+}
+
+.change-question-btn:hover {
+  background: #fed330;
+  transform: translateY(-1px);
+}
+
+.change-question-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0px rgba(0,0,0,0.05);
+}
+
 .game-screen-layout {
   display: flex;
   flex-direction: column;
